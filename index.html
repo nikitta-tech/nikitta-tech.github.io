@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nikitta@eth: ~</title>
+    <meta name="description" content="nikitta.eth — AI Engineer | Builder | Researcher">
+    <meta name="theme-color" content="#0d1117">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="terminal">
+        <!-- Header -->
+        <header class="terminal-header">
+            <div class="window-controls">
+                <span class="control red"></span>
+                <span class="control yellow"></span>
+                <span class="control green"></span>
+            </div>
+            <div class="terminal-title">nikitta@eth: ~</div>
+            <div class="spacer"></div>
+        </header>
+
+        <!-- Terminal Content -->
+        <div class="terminal-content" id="terminal-content">
+            <div id="output"></div>
+            
+            <!-- Input Line -->
+            <div class="input-line">
+                <span class="prompt">
+                    <span class="green">nikitta@eth</span>:<span class="cyan">~</span>$
+                </span>
+                <input type="text" id="command-input" autofocus autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="terminal-footer">
+            <span>Введите <span class="green">help</span> для списка команд</span>
+            <span class="shortcuts">
+                <span class="cyan">Tab</span> автодополнение |
+                <span class="cyan">↑↓</span> история |
+                <span class="cyan">Ctrl+L</span> очистить
+            </span>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
